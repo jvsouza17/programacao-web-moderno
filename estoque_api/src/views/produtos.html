@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+<body>
+    <h1>Lista de produtos</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Id:</td>
+                <td>Nome:</td>
+                <td>Quantidade:</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#produtos}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{nome}}</td>
+                <td>{{quantidade}}</td>
+            </tr>
+            {{/produtos}}
+        </tbody>
+    </table>
+</body>
+</html>
